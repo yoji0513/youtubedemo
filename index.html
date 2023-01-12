@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YoutubeDemo</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js" defer></script>
+</head>
+<body>
+    <header>
+      <h1>ログイン</h1>
+    </header>
+    <main>
+      <p>ID, Passwordご入力の上, 「ログインする」ボタンをクリックしてください.</p>
+      <form class="login_form">
+        <div>
+          <div>
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id" placeholder="id">
+          </div>
+          <div>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass" placeholder="Password" />
+          </div>
+        </div>
+        <button type="button" id="button">ログインする</button>
+      </form>
+    </main>
+</body>
+</html>
