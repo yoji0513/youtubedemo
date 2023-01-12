@@ -1,9 +1,15 @@
 "use strict";
 
 const id = document.getElementById('id')
+const pwd = document.getElementById('pass')
 const login = () => {
   const idValue = id.value
-  console.log(idValue)
+  const pwdValue = pwd.value
+  if( idValue === 'user' && pwdValue === 'password'){
+    location.href = idValue + pwdValue + ".html";
+  }else {
+    alert('idまたはpassowrdが間違っています。')
+  }
 }
 if(id){
   document.getElementById('button').addEventListener('click', () => login());
